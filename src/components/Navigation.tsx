@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export const Navigation: React.FC = () => {
   return (
-    <div className="header">
+    <div className="header nav-active">
       <nav>
         <ul>
           <li>
@@ -12,8 +12,8 @@ export const Navigation: React.FC = () => {
             <NavLink to={"/favorite"}>Coups de coeur</NavLink>
           </li>
         </ul>
-        <h1>React Movies</h1>
       </nav>
+      <h1>React Movies</h1>
     </div>
   );
 };
