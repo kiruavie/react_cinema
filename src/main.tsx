@@ -6,7 +6,11 @@ import { Home } from "./pages/Home";
 import { Favorite } from "./pages/Favorite";
 
 const router = createBrowserRouter([
-  { path: "/", element: <Home /> },
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <h1>Une erreur s'est produite...</h1>,
+  },
   {
     path: "/favorite",
     element: <Favorite />,
